@@ -3,6 +3,12 @@
 <title>test page</title>
 </head>
 <body>
-<a href="#" onclick="TestClass.DoThis(\"{\"data\": \"lol\"}\")">Click me</a>
+<a href="#" onclick="testFunction()">Click me</a>
+  <script>
+function testFunction() {
+  var jsonString = "{\"data\": \"lol\"}";
+  TestClass.DoThis(jsonString);
+}
+</script>
 </body>
 </html>
