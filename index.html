@@ -6,8 +6,8 @@
 <a href="#" onclick="testFunction()">Click me</a>
   <script>
 function testFunction() {
-  var jsonString = "{&quot;data&quot;:&quot;lol&quot;}";
-  TestClass.DoThis(jsonString);
+  var obj = {data:"lol"};
+  TestClass.DoThis(JSON.stringify(obj));
 }
 </script>
 </body>
