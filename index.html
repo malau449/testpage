@@ -5,6 +5,12 @@
 <body>
 <button type="button" style="height:200px;width:200px" onclick="testFunction()">Click me</button>
   <script>
+var android = {
+  print: function(lol){
+    console.log(lol);
+  }
+}
+    
 function testFunction() {
   var obj = {data:"lol"};
   var str = JSON.stringify(obj);
